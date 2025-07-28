@@ -1,0 +1,42 @@
+[
+  {
+    "phase": "value_pretrain",
+    "epoch": 1,
+    "val_loss": 0.0012160029542446135
+  },
+  {
+    "phase": "value_pretrain",
+    "epoch": 2,
+    "val_loss": 0.001098163081407547
+  },
+  {
+    "phase": "value_pretrain",
+    "epoch": 3,
+    "val_loss": 0.0008464430034160614
+  },
+  {
+    "phase": "value_pretrain",
+    "epoch": 4,
+    "val_loss": 0.0007991608339548111
+  },
+  {
+    "phase": "value_pretrain",
+    "epoch": 5,
+    "val_loss": 0.0007798347473144531
+  },
+  {
+    "phase": "value_pretrain",
+    "epoch": 6,
+    "val_loss": 0.000688090334534645
+  },
+  {
+    "phase": "value_pretrain",
+    "epoch": 7,
+    "val_loss": 0.0006378985977172852
+  },
+  {
+    "phase": "value_pretrain",
+    "epoch": 8,
+    "val_loss": 0.0006177317094802857
+  }
+]

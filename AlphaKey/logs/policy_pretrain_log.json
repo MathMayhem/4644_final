@@ -1,0 +1,447 @@
+[
+  {
+    "phase": "policy_pretrain",
+    "step": 550,
+    "p_loss": 5.170762062072754
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 600,
+    "p_loss": 4.332764625549316
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 650,
+    "p_loss": 3.7421722412109375
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 700,
+    "p_loss": 3.3241353034973145
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 750,
+    "p_loss": 3.0794496536254883
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 800,
+    "p_loss": 2.9547276496887207
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 850,
+    "p_loss": 2.750610828399658
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 900,
+    "p_loss": 2.662982940673828
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 950,
+    "p_loss": 2.7472877502441406
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1000,
+    "p_loss": 2.601928234100342
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1050,
+    "p_loss": 2.6177289485931396
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1100,
+    "p_loss": 2.6003971099853516
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1150,
+    "p_loss": 2.5972094535827637
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1200,
+    "p_loss": 2.3031604290008545
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1250,
+    "p_loss": 2.5175483226776123
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1300,
+    "p_loss": 2.490837335586548
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1350,
+    "p_loss": 2.6201820373535156
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1400,
+    "p_loss": 2.4069323539733887
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1450,
+    "p_loss": 2.6141176223754883
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1500,
+    "p_loss": 2.4761834144592285
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1550,
+    "p_loss": 2.4435157775878906
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1600,
+    "p_loss": 2.489637851715088
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1650,
+    "p_loss": 2.628530502319336
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1700,
+    "p_loss": 2.3780670166015625
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1750,
+    "p_loss": 2.552009105682373
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1800,
+    "p_loss": 2.5667624473571777
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1850,
+    "p_loss": 2.5243468284606934
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1900,
+    "p_loss": 2.2297463417053223
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 1950,
+    "p_loss": 2.2558364868164062
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2000,
+    "p_loss": 2.4141855239868164
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2050,
+    "p_loss": 2.4889631271362305
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2100,
+    "p_loss": 2.36535382270813
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2150,
+    "p_loss": 2.4465255737304688
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2200,
+    "p_loss": 2.4301016330718994
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2250,
+    "p_loss": 2.4380154609680176
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2300,
+    "p_loss": 2.3404712677001953
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2350,
+    "p_loss": 2.3811569213867188
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2400,
+    "p_loss": 2.291693687438965
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2450,
+    "p_loss": 2.2370831966400146
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2500,
+    "p_loss": 2.1462528705596924
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2550,
+    "p_loss": 2.5319128036499023
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2600,
+    "p_loss": 2.332993745803833
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2650,
+    "p_loss": 2.3295273780822754
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2700,
+    "p_loss": 2.2708516120910645
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2750,
+    "p_loss": 2.4598073959350586
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2800,
+    "p_loss": 2.448068857192993
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2850,
+    "p_loss": 2.341433048248291
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2900,
+    "p_loss": 2.3958773612976074
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 2950,
+    "p_loss": 2.273362159729004
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3000,
+    "p_loss": 2.1086788177490234
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3050,
+    "p_loss": 2.193942070007324
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3100,
+    "p_loss": 2.3490653038024902
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3150,
+    "p_loss": 2.306182384490967
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3200,
+    "p_loss": 2.235668659210205
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3250,
+    "p_loss": 2.2638633251190186
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3300,
+    "p_loss": 2.4245057106018066
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3350,
+    "p_loss": 2.477849245071411
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3400,
+    "p_loss": 2.184690475463867
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3450,
+    "p_loss": 2.3927292823791504
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3500,
+    "p_loss": 2.231783866882324
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3550,
+    "p_loss": 2.323530673980713
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3600,
+    "p_loss": 2.288693428039551
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3650,
+    "p_loss": 2.2001166343688965
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3700,
+    "p_loss": 2.277266025543213
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3750,
+    "p_loss": 2.5427093505859375
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3800,
+    "p_loss": 2.4134702682495117
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3850,
+    "p_loss": 2.308849811553955
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3900,
+    "p_loss": 2.307586669921875
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 3950,
+    "p_loss": 2.374885082244873
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4000,
+    "p_loss": 2.2150309085845947
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4050,
+    "p_loss": 2.151217460632324
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4100,
+    "p_loss": 2.297966480255127
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4150,
+    "p_loss": 2.3080310821533203
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4200,
+    "p_loss": 2.3232879638671875
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4250,
+    "p_loss": 2.29426908493042
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4300,
+    "p_loss": 2.4358954429626465
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4350,
+    "p_loss": 2.2646703720092773
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4400,
+    "p_loss": 2.1802737712860107
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4450,
+    "p_loss": 2.399005889892578
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4500,
+    "p_loss": 2.398498058319092
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4550,
+    "p_loss": 2.4989449977874756
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4600,
+    "p_loss": 2.279238700866699
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4650,
+    "p_loss": 2.3304190635681152
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4700,
+    "p_loss": 2.4653255939483643
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4750,
+    "p_loss": 2.3282742500305176
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4800,
+    "p_loss": 2.3287863731384277
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4850,
+    "p_loss": 2.410193681716919
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4900,
+    "p_loss": 2.4169957637786865
+  },
+  {
+    "phase": "policy_pretrain",
+    "step": 4950,
+    "p_loss": 2.3152685165405273
+  }
+]

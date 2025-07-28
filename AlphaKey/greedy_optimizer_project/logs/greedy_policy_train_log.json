@@ -1,0 +1,737 @@
+[
+  {
+    "step": 300,
+    "p_loss": 5.570656776428223,
+    "curriculum_step": 1
+  },
+  {
+    "step": 400,
+    "p_loss": 5.265618324279785,
+    "curriculum_step": 1
+  },
+  {
+    "step": 500,
+    "p_loss": 5.065609931945801,
+    "curriculum_step": 1
+  },
+  {
+    "step": 600,
+    "p_loss": 4.9468536376953125,
+    "curriculum_step": 1
+  },
+  {
+    "step": 700,
+    "p_loss": 4.85087776184082,
+    "curriculum_step": 1
+  },
+  {
+    "step": 800,
+    "p_loss": 4.8166913986206055,
+    "curriculum_step": 1
+  },
+  {
+    "step": 900,
+    "p_loss": 4.771284580230713,
+    "curriculum_step": 1
+  },
+  {
+    "step": 1000,
+    "p_loss": 4.739790916442871,
+    "curriculum_step": 1
+  },
+  {
+    "step": 1100,
+    "p_loss": 4.71148681640625,
+    "curriculum_step": 1
+  },
+  {
+    "step": 1200,
+    "p_loss": 4.703948974609375,
+    "curriculum_step": 1
+  },
+  {
+    "step": 1300,
+    "p_loss": 4.689111709594727,
+    "curriculum_step": 1
+  },
+  {
+    "step": 1400,
+    "p_loss": 4.68018913269043,
+    "curriculum_step": 1
+  },
+  {
+    "step": 1500,
+    "p_loss": 4.670318603515625,
+    "curriculum_step": 1
+  },
+  {
+    "step": 1600,
+    "p_loss": 4.665538787841797,
+    "curriculum_step": 1
+  },
+  {
+    "step": 1700,
+    "p_loss": 4.662197589874268,
+    "curriculum_step": 1
+  },
+  {
+    "step": 1800,
+    "p_loss": 4.655245780944824,
+    "curriculum_step": 1
+  },
+  {
+    "step": 1900,
+    "p_loss": 4.655020236968994,
+    "curriculum_step": 1
+  },
+  {
+    "step": 2000,
+    "p_loss": 4.6493706703186035,
+    "curriculum_step": 1
+  },
+  {
+    "step": 2100,
+    "p_loss": 4.645627021789551,
+    "curriculum_step": 1
+  },
+  {
+    "step": 2200,
+    "p_loss": 4.662738800048828,
+    "curriculum_step": 1
+  },
+  {
+    "step": 2300,
+    "p_loss": 4.642669200897217,
+    "curriculum_step": 1
+  },
+  {
+    "step": 2400,
+    "p_loss": 4.654634952545166,
+    "curriculum_step": 1
+  },
+  {
+    "step": 2500,
+    "p_loss": 4.647280693054199,
+    "curriculum_step": 1
+  },
+  {
+    "step": 2600,
+    "p_loss": 4.6406965255737305,
+    "curriculum_step": 1
+  },
+  {
+    "step": 2700,
+    "p_loss": 4.638489246368408,
+    "curriculum_step": 1
+  },
+  {
+    "step": 2800,
+    "p_loss": 4.632688999176025,
+    "curriculum_step": 1
+  },
+  {
+    "step": 2900,
+    "p_loss": 4.6381378173828125,
+    "curriculum_step": 1
+  },
+  {
+    "step": 3000,
+    "p_loss": 4.641104698181152,
+    "curriculum_step": 1
+  },
+  {
+    "step": 3100,
+    "p_loss": 4.64632511138916,
+    "curriculum_step": 1
+  },
+  {
+    "step": 3200,
+    "p_loss": 4.645326614379883,
+    "curriculum_step": 1
+  },
+  {
+    "step": 3300,
+    "p_loss": 4.641704559326172,
+    "curriculum_step": 1
+  },
+  {
+    "step": 3400,
+    "p_loss": 4.651155471801758,
+    "curriculum_step": 1
+  },
+  {
+    "step": 3500,
+    "p_loss": 4.645811080932617,
+    "curriculum_step": 1
+  },
+  {
+    "step": 3600,
+    "p_loss": 4.658140659332275,
+    "curriculum_step": 1
+  },
+  {
+    "step": 3700,
+    "p_loss": 4.648629188537598,
+    "curriculum_step": 1
+  },
+  {
+    "step": 3800,
+    "p_loss": 4.660694599151611,
+    "curriculum_step": 1
+  },
+  {
+    "step": 3900,
+    "p_loss": 4.641549110412598,
+    "curriculum_step": 1
+  },
+  {
+    "step": 4000,
+    "p_loss": 4.644965648651123,
+    "curriculum_step": 1
+  },
+  {
+    "step": 4100,
+    "p_loss": 4.66185188293457,
+    "curriculum_step": 1
+  },
+  {
+    "step": 4200,
+    "p_loss": 4.648855686187744,
+    "curriculum_step": 1
+  },
+  {
+    "step": 4300,
+    "p_loss": 4.6468505859375,
+    "curriculum_step": 1
+  },
+  {
+    "step": 4400,
+    "p_loss": 4.672855377197266,
+    "curriculum_step": 1
+  },
+  {
+    "step": 4500,
+    "p_loss": 4.649249076843262,
+    "curriculum_step": 1
+  },
+  {
+    "step": 4600,
+    "p_loss": 4.652519226074219,
+    "curriculum_step": 1
+  },
+  {
+    "step": 4700,
+    "p_loss": 4.660800933837891,
+    "curriculum_step": 1
+  },
+  {
+    "step": 4800,
+    "p_loss": 4.654801845550537,
+    "curriculum_step": 1
+  },
+  {
+    "step": 4900,
+    "p_loss": 4.6673126220703125,
+    "curriculum_step": 1
+  },
+  {
+    "step": 5000,
+    "p_loss": 4.66533899307251,
+    "curriculum_step": 1
+  },
+  {
+    "step": 5100,
+    "p_loss": 4.649622917175293,
+    "curriculum_step": 1
+  },
+  {
+    "step": 5200,
+    "p_loss": 4.649312496185303,
+    "curriculum_step": 1
+  },
+  {
+    "step": 5300,
+    "p_loss": 4.652845859527588,
+    "curriculum_step": 1
+  },
+  {
+    "step": 5400,
+    "p_loss": 4.668849945068359,
+    "curriculum_step": 1
+  },
+  {
+    "step": 5500,
+    "p_loss": 4.651838779449463,
+    "curriculum_step": 1
+  },
+  {
+    "step": 5600,
+    "p_loss": 4.666483402252197,
+    "curriculum_step": 1
+  },
+  {
+    "step": 5700,
+    "p_loss": 4.659656524658203,
+    "curriculum_step": 1
+  },
+  {
+    "step": 5800,
+    "p_loss": 4.668379306793213,
+    "curriculum_step": 1
+  },
+  {
+    "step": 5900,
+    "p_loss": 4.6645307540893555,
+    "curriculum_step": 1
+  },
+  {
+    "step": 6000,
+    "p_loss": 4.662299156188965,
+    "curriculum_step": 3
+  },
+  {
+    "step": 6100,
+    "p_loss": 4.673730850219727,
+    "curriculum_step": 3
+  },
+  {
+    "step": 6200,
+    "p_loss": 4.667210578918457,
+    "curriculum_step": 3
+  },
+  {
+    "step": 6300,
+    "p_loss": 4.679903030395508,
+    "curriculum_step": 3
+  },
+  {
+    "step": 6400,
+    "p_loss": 4.669610023498535,
+    "curriculum_step": 3
+  },
+  {
+    "step": 6500,
+    "p_loss": 4.661401271820068,
+    "curriculum_step": 3
+  },
+  {
+    "step": 6600,
+    "p_loss": 4.681309700012207,
+    "curriculum_step": 3
+  },
+  {
+    "step": 6700,
+    "p_loss": 4.662927627563477,
+    "curriculum_step": 3
+  },
+  {
+    "step": 6800,
+    "p_loss": 4.6724090576171875,
+    "curriculum_step": 3
+  },
+  {
+    "step": 6900,
+    "p_loss": 4.672649383544922,
+    "curriculum_step": 3
+  },
+  {
+    "step": 7000,
+    "p_loss": 4.672028541564941,
+    "curriculum_step": 3
+  },
+  {
+    "step": 7100,
+    "p_loss": 4.6806535720825195,
+    "curriculum_step": 3
+  },
+  {
+    "step": 7200,
+    "p_loss": 4.673119068145752,
+    "curriculum_step": 3
+  },
+  {
+    "step": 7300,
+    "p_loss": 4.678489685058594,
+    "curriculum_step": 3
+  },
+  {
+    "step": 7400,
+    "p_loss": 4.682964324951172,
+    "curriculum_step": 3
+  },
+  {
+    "step": 7500,
+    "p_loss": 4.6875505447387695,
+    "curriculum_step": 3
+  },
+  {
+    "step": 7600,
+    "p_loss": 4.690829277038574,
+    "curriculum_step": 3
+  },
+  {
+    "step": 7700,
+    "p_loss": 4.693206787109375,
+    "curriculum_step": 3
+  },
+  {
+    "step": 7800,
+    "p_loss": 4.6917643547058105,
+    "curriculum_step": 3
+  },
+  {
+    "step": 7900,
+    "p_loss": 4.691516876220703,
+    "curriculum_step": 3
+  },
+  {
+    "step": 8000,
+    "p_loss": 4.68385124206543,
+    "curriculum_step": 5
+  },
+  {
+    "step": 8100,
+    "p_loss": 4.684466361999512,
+    "curriculum_step": 5
+  },
+  {
+    "step": 8200,
+    "p_loss": 4.700052261352539,
+    "curriculum_step": 5
+  },
+  {
+    "step": 8300,
+    "p_loss": 4.675707817077637,
+    "curriculum_step": 5
+  },
+  {
+    "step": 8400,
+    "p_loss": 4.700303077697754,
+    "curriculum_step": 5
+  },
+  {
+    "step": 8500,
+    "p_loss": 4.677542686462402,
+    "curriculum_step": 5
+  },
+  {
+    "step": 8600,
+    "p_loss": 4.6946258544921875,
+    "curriculum_step": 5
+  },
+  {
+    "step": 8700,
+    "p_loss": 4.689909934997559,
+    "curriculum_step": 5
+  },
+  {
+    "step": 8800,
+    "p_loss": 4.684013366699219,
+    "curriculum_step": 5
+  },
+  {
+    "step": 8900,
+    "p_loss": 4.694598197937012,
+    "curriculum_step": 5
+  },
+  {
+    "step": 9000,
+    "p_loss": 4.6894001960754395,
+    "curriculum_step": 5
+  },
+  {
+    "step": 9100,
+    "p_loss": 4.690267562866211,
+    "curriculum_step": 5
+  },
+  {
+    "step": 9200,
+    "p_loss": 4.687928676605225,
+    "curriculum_step": 5
+  },
+  {
+    "step": 9300,
+    "p_loss": 4.688335418701172,
+    "curriculum_step": 5
+  },
+  {
+    "step": 9400,
+    "p_loss": 4.706336975097656,
+    "curriculum_step": 5
+  },
+  {
+    "step": 9500,
+    "p_loss": 4.6872944831848145,
+    "curriculum_step": 5
+  },
+  {
+    "step": 9600,
+    "p_loss": 4.6845879554748535,
+    "curriculum_step": 5
+  },
+  {
+    "step": 9700,
+    "p_loss": 4.693531036376953,
+    "curriculum_step": 5
+  },
+  {
+    "step": 9800,
+    "p_loss": 4.6923604011535645,
+    "curriculum_step": 5
+  },
+  {
+    "step": 9900,
+    "p_loss": 4.69150447845459,
+    "curriculum_step": 5
+  },
+  {
+    "step": 10000,
+    "p_loss": 4.687536239624023,
+    "curriculum_step": 10
+  },
+  {
+    "step": 10100,
+    "p_loss": 4.696477890014648,
+    "curriculum_step": 10
+  },
+  {
+    "step": 10200,
+    "p_loss": 4.683566093444824,
+    "curriculum_step": 10
+  },
+  {
+    "step": 10300,
+    "p_loss": 4.69171142578125,
+    "curriculum_step": 10
+  },
+  {
+    "step": 10400,
+    "p_loss": 4.700691223144531,
+    "curriculum_step": 10
+  },
+  {
+    "step": 10500,
+    "p_loss": 4.708922386169434,
+    "curriculum_step": 10
+  },
+  {
+    "step": 10600,
+    "p_loss": 4.689857482910156,
+    "curriculum_step": 10
+  },
+  {
+    "step": 10700,
+    "p_loss": 4.708194732666016,
+    "curriculum_step": 10
+  },
+  {
+    "step": 10800,
+    "p_loss": 4.704641342163086,
+    "curriculum_step": 10
+  },
+  {
+    "step": 10900,
+    "p_loss": 4.687386512756348,
+    "curriculum_step": 10
+  },
+  {
+    "step": 11000,
+    "p_loss": 4.698555946350098,
+    "curriculum_step": 10
+  },
+  {
+    "step": 11100,
+    "p_loss": 4.69296407699585,
+    "curriculum_step": 10
+  },
+  {
+    "step": 11200,
+    "p_loss": 4.704830169677734,
+    "curriculum_step": 10
+  },
+  {
+    "step": 11300,
+    "p_loss": 4.710684776306152,
+    "curriculum_step": 10
+  },
+  {
+    "step": 11400,
+    "p_loss": 4.695457458496094,
+    "curriculum_step": 10
+  },
+  {
+    "step": 11500,
+    "p_loss": 4.712998390197754,
+    "curriculum_step": 10
+  },
+  {
+    "step": 11600,
+    "p_loss": 4.708664894104004,
+    "curriculum_step": 10
+  },
+  {
+    "step": 11700,
+    "p_loss": 4.7039594650268555,
+    "curriculum_step": 10
+  },
+  {
+    "step": 11800,
+    "p_loss": 4.710593223571777,
+    "curriculum_step": 10
+  },
+  {
+    "step": 11900,
+    "p_loss": 4.705283164978027,
+    "curriculum_step": 10
+  },
+  {
+    "step": 12000,
+    "p_loss": 4.703967094421387,
+    "curriculum_step": 20
+  },
+  {
+    "step": 12100,
+    "p_loss": 4.69896125793457,
+    "curriculum_step": 20
+  },
+  {
+    "step": 12200,
+    "p_loss": 4.697035789489746,
+    "curriculum_step": 20
+  },
+  {
+    "step": 12300,
+    "p_loss": 4.6963582038879395,
+    "curriculum_step": 20
+  },
+  {
+    "step": 12400,
+    "p_loss": 4.717949867248535,
+    "curriculum_step": 20
+  },
+  {
+    "step": 12500,
+    "p_loss": 4.71026611328125,
+    "curriculum_step": 20
+  },
+  {
+    "step": 12600,
+    "p_loss": 4.7004804611206055,
+    "curriculum_step": 20
+  },
+  {
+    "step": 12700,
+    "p_loss": 4.695089817047119,
+    "curriculum_step": 20
+  },
+  {
+    "step": 12800,
+    "p_loss": 4.710697174072266,
+    "curriculum_step": 20
+  },
+  {
+    "step": 12900,
+    "p_loss": 4.710367202758789,
+    "curriculum_step": 20
+  },
+  {
+    "step": 13000,
+    "p_loss": 4.711702346801758,
+    "curriculum_step": 29
+  },
+  {
+    "step": 13100,
+    "p_loss": 4.706661224365234,
+    "curriculum_step": 29
+  },
+  {
+    "step": 13200,
+    "p_loss": 4.700340270996094,
+    "curriculum_step": 29
+  },
+  {
+    "step": 13300,
+    "p_loss": 4.717226505279541,
+    "curriculum_step": 29
+  },
+  {
+    "step": 13400,
+    "p_loss": 4.713939189910889,
+    "curriculum_step": 29
+  },
+  {
+    "step": 13500,
+    "p_loss": 4.704692840576172,
+    "curriculum_step": 29
+  },
+  {
+    "step": 13600,
+    "p_loss": 4.715294361114502,
+    "curriculum_step": 29
+  },
+  {
+    "step": 13700,
+    "p_loss": 4.718393802642822,
+    "curriculum_step": 29
+  },
+  {
+    "step": 13800,
+    "p_loss": 4.708268165588379,
+    "curriculum_step": 29
+  },
+  {
+    "step": 13900,
+    "p_loss": 4.713440418243408,
+    "curriculum_step": 29
+  },
+  {
+    "step": 14000,
+    "p_loss": 4.72081995010376,
+    "curriculum_step": 29
+  },
+  {
+    "step": 14100,
+    "p_loss": 4.701979637145996,
+    "curriculum_step": 29
+  },
+  {
+    "step": 14200,
+    "p_loss": 4.710941314697266,
+    "curriculum_step": 29
+  },
+  {
+    "step": 14300,
+    "p_loss": 4.706727027893066,
+    "curriculum_step": 29
+  },
+  {
+    "step": 14400,
+    "p_loss": 4.722050666809082,
+    "curriculum_step": 29
+  },
+  {
+    "step": 14500,
+    "p_loss": 4.709458351135254,
+    "curriculum_step": 29
+  },
+  {
+    "step": 14600,
+    "p_loss": 4.72093391418457,
+    "curriculum_step": 29
+  },
+  {
+    "step": 14700,
+    "p_loss": 4.71975040435791,
+    "curriculum_step": 29
+  },
+  {
+    "step": 14800,
+    "p_loss": 4.701727390289307,
+    "curriculum_step": 29
+  },
+  {
+    "step": 14900,
+    "p_loss": 4.711128234863281,
+    "curriculum_step": 29
+  }
+]
