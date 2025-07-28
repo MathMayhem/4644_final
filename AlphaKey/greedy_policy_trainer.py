@@ -1,24 +1,6 @@
 # greedy_policy_trainer.py
 # A standalone script to train a dedicated "Greedy Policy" model.
 #
-# This script focuses exclusively on the policy pre-training methodology from
-# the original project but enhances it in several key ways:
-#   1. It trains the ENTIRE network (GNN body + Policy Head) to imitate
-#      the OracleMCTS, not just the policy head.
-#   2. It uses a curriculum, gradually increasing the complexity of the
-#      problems from 1-step optimizations up to 29-step optimizations.
-#   3. It uses a modified, policy-only model for efficiency.
-#   4. It saves all its outputs (model, checkpoints, logs, visualizations)
-#      to a separate 'greedy_optimizer_project' directory to avoid
-#      conflicting with the main RL project.
-#
-# --- NEW in this version ---
-#   5. It uses a custom "Stateful" MCTS oracle that heavily penalizes
-#      revisiting a layout that has already been seen in a search path,
-#      preventing the model from learning to loop.
-#   6. It applies a small penalty to the No-Op action during training signal
-#      generation, encouraging the model to explore more swaps.
-#
 # HOW TO RUN:
 #   - To train the model:
 #     python greedy_policy_trainer.py --mode train
@@ -73,11 +55,8 @@ class GreedyConfig:
 
     ORACLE_SIMULATIONS = 64
 
-    # --- NEW: Anti-Looping Hyperparameters ---
-    # Penalty to apply to the No-Op action's visit count before normalization.
-    # A value of 0.2 means its visit count is multiplied by (1 - 0.2) = 0.8.
+    # Hack to prevent constant repetitions
     NO_OP_PENALTY = 0.25
-    # The large negative value assigned to a move that revisits a previous state.
     REPEAT_STATE_PENALTY = -1e9
 
     # --- Curriculum Schedule ---
@@ -110,7 +89,7 @@ class GreedyPolicyNet(PolicyValueNetV4):
         return policy_logits, None
 
 # ==============================================================================
-# 2. NEW STATEFUL ORACLE MCTS WITH ANTI-LOOPING LOGIC
+# 2. STATEFUL ORACLE MCTS WITH ANTI-LOOPING LOGIC
 # ==============================================================================
 
 class StatefulOracleMCTS:
@@ -156,7 +135,6 @@ class StatefulOracleMCTS:
 
         for _ in range(GreedyConfig.ORACLE_SIMULATIONS):
             node = root_node
-            # NEW: Keep track of layouts visited during this specific simulation path
             path_history = {root_node.layout_str}
 
             # --- Selection ---
@@ -165,8 +143,6 @@ class StatefulOracleMCTS:
                 path_history.add(node.layout_str)
 
             # --- Evaluation ---
-            # NEW: Check if the leaf node's layout is a repeated state in this path.
-            # If so, assign a massive penalty. Otherwise, get the real score.
             if node.layout_str in path_history and node is not root_node:
                 value = GreedyConfig.REPEAT_STATE_PENALTY
             else:
@@ -194,7 +170,6 @@ class StatefulOracleMCTS:
         for action, child in root_node.children.items():
             visit_counts[action] = child.visit_count
 
-        # NEW: Penalize the No-Op action to encourage more swaps during training.
         if visit_counts[Config.NO_OP_ACTION_INDEX] > 0:
             visit_counts[Config.NO_OP_ACTION_INDEX] *= (1.0 - GreedyConfig.NO_OP_PENALTY)
 
@@ -207,7 +182,7 @@ class StatefulOracleMCTS:
             return np.ones(Config.NUM_ACTIONS) / Config.NUM_ACTIONS
 
 # ==============================================================================
-# 3. TRAINING PHASE (MODIFIED TO USE THE NEW MCTS)
+# 3. TRAINING PHASE
 # ==============================================================================
 def train():
     """Trains the GreedyPolicyNet using the stateful imitation learning."""
@@ -218,7 +193,6 @@ def train():
     model = GreedyPolicyNet().to(device)
     print("Initialized GreedyPolicyNet model.")
 
-    # NEW: Instantiate our enhanced, state-aware MCTS
     env = KeyboardEnvironment()
     oracle_mcts = StatefulOracleMCTS(model, env)
 
@@ -240,7 +214,6 @@ def train():
         weights_tensor = torch.tensor([weights_dict.get(k, 0.0) for k in Config.WEIGHT_KEYS], dtype=torch.float32).to(device)
         steps_left = random.randint(1, current_max_steps)
 
-        # The oracle now generates a smarter, non-looping policy
         target_policy = oracle_mcts.run(layout, weights_dict, weights_tensor, steps_left)
         replay_buffer.append({
             "layout": layout, "weights": weights_tensor.cpu(),
@@ -280,7 +253,7 @@ def train():
     with open(GreedyConfig.LOG_PATH, 'w') as f: json.dump(training_logs, f, indent=2)
 
 # ==============================================================================
-# 4. VISUALIZATION AND MAIN ENTRYPOINT (Unchanged)
+# 4. VISUALIZATION AND MAIN ENTRYPOINT
 # ==============================================================================
 def visualize():
     """Generates a plot of the training performance from the log file."""

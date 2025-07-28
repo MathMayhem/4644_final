@@ -1,16 +1,4 @@
 # inference.py
-# A script to run and visualize the optimization process for a trained model.
-#
-# This script can load either the "Greedy Policy" model or the final "RL" model
-# and run it on a given keyboard layout (e.g., QWERTY or random). It will
-# print each swap the model makes and calculate the layout's score at each step.
-#
-# --- NEW in this version ---
-#   - Stateful Inference: The script now keeps track of all layouts visited
-#     during a single run.
-#   - Anti-Looping: If the model's highest-rated swap would lead to a
-#     previously seen layout, that swap is rejected, and the script considers
-#     the model's next-best suggestion. This guarantees forward progress.
 #
 # HOW TO RUN:
 #
@@ -42,7 +30,7 @@ from torch_geometric.data import Batch
 # To avoid importing from an executable script, we'll redefine the GreedyPolicyNet
 # class here. It's identical to the one in `greedy_policy_trainer.py`.
 class GreedyPolicyNet(PolicyValueNetV4):
-    """Modified V4 network without the value head."""
+    """Modified network without the value head."""
     def __init__(self):
         super(GreedyPolicyNet, self).__init__()
         del self.value_head
@@ -128,8 +116,6 @@ def run_inference(model, model_type, start_layout, weights_dict, max_swaps, devi
     env = KeyboardEnvironment()
     current_layout = start_layout
     score_history = []
-
-    # NEW: Keep track of all layouts visited during this run.
     seen_layouts = {start_layout}
 
     initial_components = env.get_score_components(current_layout, weights_dict)
@@ -151,52 +137,41 @@ def run_inference(model, model_type, start_layout, weights_dict, max_swaps, devi
         with torch.no_grad():
             policy_logits, _ = model(graph_batch)
 
-            # --- NEW: Stateful Action Selection Logic ---
             action_probs = F.softmax(policy_logits, dim=1).squeeze()
             sorted_actions = torch.argsort(action_probs, descending=True)
 
-            chosen_action = -1 # Sentinel for no valid action found
-            # Find the best action that leads to a NOVEL state.
+            chosen_action = -1
             for action_candidate in sorted_actions:
                 action_candidate = action_candidate.item()
 
-                # First, check if the candidate is the No-Op action.
                 if action_candidate == Config.NO_OP_ACTION_INDEX:
-                    chosen_action = action_candidate # No-Op is always a valid stop.
+                    chosen_action = action_candidate
                     break
 
-                # See what the next layout would be.
                 potential_layout = apply_action(current_layout, action_candidate)
 
-                # If we haven't seen this layout before, it's our choice.
                 if potential_layout not in seen_layouts:
                     chosen_action = action_candidate
-                    break # Found a valid, novel move.
-                # else: This action would cause a loop, so we ignore it and check the next best one.
+                    break
 
-            # If all possible moves lead to loops, we must stop.
             if chosen_action == -1:
                 print(f"Step {i}: All possible moves lead to previous states. Halting.")
                 chosen_action = Config.NO_OP_ACTION_INDEX
 
-        # Check if the chosen action is to stop.
         if chosen_action == Config.NO_OP_ACTION_INDEX:
             print(f"\nStep {i}: Model chose to stop (NO_OP). Halting optimization.")
             break
 
-        # Apply the validated swap
         key_indices = ACTION_TO_SWAP[chosen_action]
         char1 = current_layout[key_indices[0]]
         char2 = current_layout[key_indices[1]]
 
         new_layout = apply_action(current_layout, chosen_action)
 
-        # Get new score and update history
         new_components = env.get_score_components(new_layout, weights_dict)
         new_score = get_total_score(new_components, weights_dict)
         score_history.append(new_score)
 
-        # NEW: Add the new layout to our set of seen states.
         seen_layouts.add(new_layout)
 
         print(f"\nStep {i}: Swap '{char1}' <-> '{char2}'")
