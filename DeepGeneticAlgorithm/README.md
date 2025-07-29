@@ -1,6 +1,7 @@
 # Deep Genetic Algorithm
 In this approach to keyboard optimization, we expand upon the MKLOGA method and use a genetic algorithm for evolving high scoring layouts.
 For the sake of computational efficiency, a deep neural network is also added to this genetic algorithm as a faster surrogate model of the true keyboard metrics.
+There is also a diagram of this algorithm included in this folder.
 
 # Data Files
 To use our training data or pretrained network weights, download these pickle files into your google drive:
